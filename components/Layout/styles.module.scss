@@ -1,0 +1,31 @@
+
+.container {
+  //min-height: 100vh;
+  max-width: 856px;
+  margin: 0 auto;
+  padding: 4rem;
+  box-sizing: content-box;
+
+  &.center {
+    margin: auto;
+  }
+}
+
+.main {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+.content {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+
+  > p {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

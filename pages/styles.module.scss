@@ -1,0 +1,36 @@
+
+
+.container {
+  //min-height: 100vh;
+  max-width: 856px;
+  margin: 0 auto;
+  padding: 4rem;
+  box-sizing: content-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 4rem;
+  margin: auto 0;
+  color: var(--font-color);
+  text-shadow: 4px 4px var(--primary);
+}
+
+.photo {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  color: var(--primary);
+  box-shadow: 4px 4px;
+  filter: contrast(1.2);
+}
+
+.main {
+  display: flex;
+  margin-top: 4rem;
+}

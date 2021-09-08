@@ -1,0 +1,10 @@
+.gitlab-ci.yml
+
+.helm
+.husky
+.idea
+.vscode
+dist
+.werf
+
+node_modules

@@ -1,0 +1,22 @@
+
+
+.container {
+  position: fixed;
+}
+
+.notFoundLink {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  padding: 1.5rem;
+  font-size: 8vmax;
+  font-family: monospace;
+}
+
+.goToMain {
+  position: fixed;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -20%);
+  font-size: 2.5vmax;
+}

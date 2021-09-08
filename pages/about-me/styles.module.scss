@@ -1,0 +1,16 @@
+
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 620px;
+
+  a {
+    padding: 0.5rem;
+
+    img {
+      width: 86px;
+      height: 86px;
+    }
+  }
+}

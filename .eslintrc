@@ -1,0 +1,114 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals"
+  ],
+  "plugins": [
+    "react",
+    "import",
+    "@typescript-eslint"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@utils", "./src/utils"],
+          ["@features", "./src/features"],
+          ["@pages", "./src/pages"],
+          ["@shared", "./src/shared"],
+          ["@styles", "./src/styles"]
+        ],
+        "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
+      }
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "amd": true,
+    "node": true
+  },
+  "globals": {
+    "process": true,
+    "currentUser": true
+  },
+  "rules": {
+    "no-duplicate-imports": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-trailing-spaces": "error",
+    "@typescript-eslint/no-empty-interface": "off",
+    "no-empty-interface": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "max-len": [
+      "warn",
+      {
+        "ignorePattern": "^import\\s.+\\sfrom\\s.+;$",
+        "code": 80,
+        "comments": 120,
+        "ignoreTemplateLiterals": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true
+      }
+    ],
+    "no-console": [
+     "error",
+     { "allow": ["error", "warn", "info"] }
+    ],
+    "no-multiple-empty-lines": [
+      "error", {
+        "max": 1,
+        "maxEOF": 0
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "printWidth": 80,
+        "tabWidth": 2,
+        "trailingComma": "all",
+        "semi": true
+      }
+    ],
+    "object-shorthand": "error",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "import/order": ["error", {
+        "groups": [
+          ["external"],
+          ["builtin"],
+          ["internal"],
+          ["parent"],
+          ["sibling"],
+          ["object"],
+          ["index"]
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
+}
